@@ -643,7 +643,6 @@ header nav .form i {
 }
 .skills .bullets li.active {
   background-color: #19c8fa;
-  
 }
 .skills .prog-holder {
   margin-bottom: 40px;
@@ -657,9 +656,33 @@ header nav .form i {
   height: 30px;
   background-color: rgb(45 71 61 / 19%);
 }
-.skills .prog-holder .prog span {
+/* .skills .prog-holder .prog span {
   height: 100%;
   background-color: var(--main-color);
+  position: relative;
+  display: block;
+} */
+.skills .prog-holder .prog .first  {
+  height: 100%;
+  background-color: rgb(0 201 0);
+  position: relative;
+  display: block;
+}
+.skills .prog-holder .prog .second {
+  height: 100%;
+  background-color: rgb(41 170 121);
+  position: relative;
+  display: block;
+}
+.skills .prog-holder .prog .third{
+  height: 100%;
+  background-color: var(--main-color);
+  position: relative;
+  display: block;
+}
+.skills .prog-holder .prog .four {
+  height: 100%;
+  background-color: rgb(232 5 5);
   position: relative;
   display: block;
 }
