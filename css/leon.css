@@ -263,7 +263,7 @@ header nav .form i {
   margin-right: 20px;
 }
 .landing .bullets .active {
-  background-color: var(--trasparent-color);
+  background-color: rgb(17 160 106);
 }
 /* End landing */
 /* Start services */
@@ -795,9 +795,24 @@ header nav .form i {
   text-decoration: none;
   border: 1px solid var(--main-color);
   padding: 15px;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
 }
-.pricing .plans .plan .foot a:hover {
-
+.pricing .plans .plan .foot a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--main-color);
+  z-index: -1;
+  transition: .3s;
+  border-radius:0 0 50% ;
+}
+.pricing .plans .plan .foot a:hover::before {
+  height: 100%;
 }
 .pricing .contact-text {
   text-align: center;
